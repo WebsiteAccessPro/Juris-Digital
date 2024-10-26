@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Regístrate!</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Barra blanca con su contenido -->
+    <div class="menu-container">
+        <div class="menu">
+            <img class="logo-1" src="img/logo.png" alt="Logo">
+            <span class="brand-name">JURIS DIGITAL</span>
+            <div class="menu-toggle" id="menuToggle">☰</div> <!-- Icono de menú -->
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="registro.html">¡Regístrate!</a></li>
+                    <li><a href="info-menu.html">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="Registrate">
+            <h2>Crea una nueva cuenta</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu email">
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
+
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <button type="submit">INGRESAR</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Logos al final de la página -->
+    <footer>
+        <div class="logos-container">
+            <a href="https://www.facebook.com/people/Juris-Digital/61567073077182/" target="_blank">
+                <img class="logo" src="img/facebook.png" alt="Logo Facebook">
+            </a>
+            <a href="https://www.instagram.com/iuris.digital/" target="_blank">
+                <img class="logo" src="img/instagram.png" alt="Logo Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active'); // Alterna la clase 'active'
+        });
+
+    </script>
+
+</body>
+</html>

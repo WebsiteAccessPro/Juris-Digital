@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Regístrate!</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <!-- Barra blanca con su contenido -->
+    <div class="menu-container">
+        <div class="menu">
+            <img class="logo-1" src="img/logo.png" alt="Logo">
+            <span class="brand-name">JURIS DIGITAL</span>
+            <div class="menu-toggle" id="menuToggle">☰</div> <!-- Icono de menú -->
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="registro.html">¡Regístrate!</a></li>
+                    <li><a href="info-menu.html">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Menú principal -->
+    <div class="custom-menu">
+        <h1>Menú</h1>
+        <div class="menu">
+            <a href="index.html" class="menu-item">INICIO</a>
+            <a href="https://chat.whatsapp.com/Hbw5sVUrOEUJ2yQyok35aL" class="menu-item">CONTACTOS</a>
+            <a href="#popup4" class="menu-item">PREGUNTAS FRECUENTES</a>
+            <a href="https://www.tiktok.com/@juris_digital?_t=8qb2EGuCL0H&_r=1" class="menu-item">TIKTOK</a>
+            <a href="#popup" class="menu-item">SERVICIOS</a>
+            <a href="#popup2" class="menu-item">ACERCA DE NOSOTROS</a>
+            <a href="#popup3" class="menu-item">NUESTRA CAUSA</a>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <h2>Servicios de Juris Digital</h2>
+        
+                <!-- Contenido para móvil -->
+                <p class="mobile-content">
+                    <strong>1.</strong> Sesiones de conciliación <br> sobre temas de manutención. <br>
+                    <strong>2.</strong> Sesiones de conciliación <br> sobre temas de divorcio. <br>
+                    <strong>3.</strong> Sesiones de conciliación sobre <br> temas de regímenes de visitas. <br>
+                    <strong>4.</strong> Sesiones de conciliación sobre <br> temas de hijos extramatrimoniales.
+                </p>
+        
+                <!-- Contenido para PC -->
+                <p class="desktop-content">
+                    <strong>1.</strong> Sesiones de conciliación en temas de manutención, 
+                    <strong>2.</strong> Sesiones de conciliación en temas de divorcio, 
+                    <strong>3.</strong> Sesiones de conciliación en regímenes de visitas, 
+                    <strong>4.</strong> Sesiones de conciliación en temas de hijos extramatrimoniales.
+                </p>
+            </div>
+        </div>
+        
+        <style>
+            /* Ocultar el contenido para móvil por defecto */
+            .mobile-content {
+                display: none;
+            }
+        
+            /* Mostrar el contenido para PC en pantallas grandes */
+            .desktop-content {
+                display: block;
+            }
+        
+            /* En dispositivos móviles, mostrar el contenido móvil y ocultar el de PC */
+            @media (max-width: 767px) {
+                .mobile-content {
+                    display: block;
+                }
+                .desktop-content {
+                    display: none;
+                }
+            }
+        </style>
+        
+
+        <div class="popup" id="popup2">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <h2>¿Quienes Somos?</h2>
+                <p>Somos un centro de conciliación virtual, el cual ofrece una alternativa a la presencialidad, con el fin de dar una mayor comodidad y eficiencia a todas las personas que estén pasando por un proceso de conciliación, ya sea por motivos de manutención, divorcio, regímenes de visitas, entre otros.</p>
+                <p>Correo: jobricenoq@ucvvirtual.edu.pe</p>
+            </div>
+        </div>
+
+        <div class="popup" id="popup3">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <h2>Nuestra Causa</h2>
+                <p>Buscamos asegurar celeridad, eficiencia, comodidad y seguridad a todas las personas que deseen seguir sus respectivos procesos de conciliación junto a nosotros, orientándonos a ofrecer el mejor servicio posible en este campo aún poco explorado que es la virtualidad.</p>
+            </div>
+        </div>
+
+        <div class="popup" id="popup4">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <h2>Preguntas Frecuentes:</h2>
+                <p><strong>¿Qué es Juris Digital?</strong><br>
+                    Es un espacio digital seguro y neutral donde, con la guía de un conciliador experto, se facilita la resolución de conflictos a través del diálogo y la negociación, ofreciendo un ambiente confidencial y accesible.
+                </p> 
+                <p><strong>¿Puedo hacer mi sesión de conciliación desde otra localidad que no sea Trujillo?</strong><br>
+                    Sin importar de qué parte de Perú sea, podrá acceder a los servicios que Juris Digital le ofrece.
+                </p>
+                <p><strong>¿En qué nos especializamos?</strong><br>
+                    En sesiones de conciliación sobre temas de manutención.
+                </p>
+            </div>
+        </div>
+        
+
+        <div class="logos-container">
+            <a href="https://www.facebook.com/people/Juris-Digital/61567073077182/" target="_blank">
+                <img class="logo" src="img/facebook.png" alt="Logo Facebook">
+            </a>
+            <a href="https://www.instagram.com/iuris.digital/" target="_blank">
+                <img class="logo" src="img/instagram.png" alt="Logo Instagram">
+            </a>
+        </div>
+
+    </div>
+    
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('active'); // Alterna la clase 'active'
+        });
+    </script>
+
+</body>
+</html>
